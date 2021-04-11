@@ -5,8 +5,8 @@
 // puisque l'on cherche à décrypter un texte 
 // mais cela ne change rien au fonctionnement du code 
 
-var alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-var alphabetReverse= ["Z","Y","X","W","V","U","T","S","R","Q","P","O","N","M","L","K","J","I","H","G","F","E","D","C","B","A"]
+const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+const alphabetReverse= ["Z","Y","X","W","V","U","T","S","R","Q","P","O","N","M","L","K","J","I","H","G","F","E","D","C","B","A"]
 let texteClair =document.getElementById('texteClair');
 let cle = document.getElementById('clé');
 let bl=0;
