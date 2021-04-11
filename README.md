@@ -22,7 +22,7 @@ clé: "robin"
 
 En sortie du premier stade on a donc :
 
-HELLO WORLD DU JAVASCRIPT
+HELLO WORLD DU JAVASCRIPT /n
 ROBIN ROBIN RO BINROBINRO
 
 On additionne la valeur de l'index des lettres (texte + clé) du tableau [alphabet]. Ce qui nous donne le réultat de l'index du nouveau caractère crypté.
