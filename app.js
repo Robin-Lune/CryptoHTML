@@ -1,6 +1,63 @@
 /* JAVASCRIPT CRYPTO ROBIN*/ 
 
-const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+
+const alphabet = [
+  "A",
+  "B",
+  "0",
+  "C",
+  "D",
+  "1",
+  "E",
+  "F",
+  "2",
+  "G",
+  "H",
+  "3",
+  "I",
+  "J",
+  "4",
+  "K",
+  "L",
+  "5",
+  "M",
+  "N",
+  "6",
+  "O",
+  "P",
+  "7",
+  "Q",
+  "R",
+  "8",
+  "S",
+  "T",
+  "9",
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
+];
+const caractèresSpéciaux = [
+  " ",
+  "'",
+  ".",
+  ",",
+  "!",
+  ":",
+  '"',
+  "?",
+  "-",
+  "_",
+  "&",
+  "/",
+  "*",
+  "+",
+  "=",
+  "#",
+  "@",
+];
 let texteClair =document.getElementById('texteClair');
 let cle = document.getElementById('clé');
 let bl=0;
@@ -35,54 +92,38 @@ cle.addEventListener('input', function (event) {
 function cryptage(){
 	for (i=0;i<texteClair.length;i++){
 		var lettre = texteClair[i];
-		if (lettre === " "|| lettre ==="'"|| lettre ==="."|| lettre===","|| lettre==="!"|| lettre===":"|| lettre==='"'|| lettre==="?" || lettre ==="-" || lettre==="_"){
+		if (caractèresSpéciaux.includes(lettre)){
 			bl++;
 			texteCrypte += " ";
 		} else { 
 			switch (lettre) {
-				case 'É':
-					lettre = 'E';
-					break ;
-				case 'È':
-					lettre = 'E';
-					break ;
-				case 'Ë':
-					lettre = 'E';
-					break ;
-				case 'Ê':
-					lettre = 'E';
-					break ;
-				case 'À':
-					lettre = 'A';
-					break ;
-				case 'Â':
-					lettre = 'A';
-					break ;
-				case 'Ä':
-					lettre = 'A';
-					break ;
-				case 'Ç':
-					lettre = 'C';
-					break ;		
-				case 'Û':
-					lettre = 'U';
-					break ;		
-				case 'Ù':
-					lettre = 'U';
-					break ;		
-				case 'Ô':
-					lettre = 'O';
-					break ;		
-				case 'Ö':
-					lettre = 'O';
-					break ;				
-				case 'Î':
-					lettre = 'I';
-					break ;		
-				case 'Ï':
-					lettre = 'I';
-					break ;		
-			}
+				case "É":
+				case "È":
+				case "Ë":
+				case "Ê":
+				  lettre = "E";
+				  break;
+				case "À":
+				case "Â":
+				case "Ä":
+				  lettre = "A";
+				  break;
+				case "Ç":
+				  lettre = "C";
+				  break;
+				case "Û":
+				case "Ù":
+				  lettre = "U";
+				  break;
+				case "Ô":
+				case "Ö":
+				  lettre = "O";
+				  break;
+				case "Î":
+				case "Ï":
+				  lettre = "I";
+				  break;
+			   }
 			var danslarray = alphabet.indexOf(lettre)
 			var j=(i-bl)%cle.length;
 			var lettre2 = cle[j];
