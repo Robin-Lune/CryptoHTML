@@ -4,9 +4,82 @@
 // techniquement il faudrait inverser les noms des variables texteClair et texteCrypte
 // puisque l'on cherche à décrypter un texte 
 // mais cela ne change rien au fonctionnement du code 
-
-const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-const alphabetReverse= ["Z","Y","X","W","V","U","T","S","R","Q","P","O","N","M","L","K","J","I","H","G","F","E","D","C","B","A"]
+const alphabet = [
+  "A",
+  "B",
+  "0",
+  "C",
+  "D",
+  "1",
+  "E",
+  "F",
+  "2",
+  "G",
+  "H",
+  "3",
+  "I",
+  "J",
+  "4",
+  "K",
+  "L",
+  "5",
+  "M",
+  "N",
+  "6",
+  "O",
+  "P",
+  "7",
+  "Q",
+  "R",
+  "8",
+  "S",
+  "T",
+  "9",
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
+];
+const alphabetReverse = [
+  "Z",
+  "Y",
+  "X",
+  "W",
+  "V",
+  "U",
+  "9",
+  "T",
+  "S",
+  "8",
+  "R",
+  "Q",
+  "7",
+  "P",
+  "O",
+  "6",
+  "N",
+  "M",
+  "5",
+  "L",
+  "K",
+  "4",
+  "J",
+  "I",
+  "3",
+  "H",
+  "G",
+  "2",
+  "F",
+  "E",
+  "1",
+  "D",
+  "C",
+  "0",
+  "B",
+  "A",
+];
 let texteClair =document.getElementById('texteClair');
 let cle = document.getElementById('clé');
 let bl=0;
@@ -62,4 +135,4 @@ function remiseAzero() {
 	texteCrypte="";
 }
 
-// MAJ 11/04/2021 LEBON ROBIN  
+// MAJ 15/04/2021 LEBON ROBIN  
