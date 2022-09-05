@@ -1,7 +1,7 @@
 # CryptoHTML
 Projet d'une page web qui permet de crypter du texte. 
 
-L'algotrithme  de cryptographie est écrit en JavaScipt, language dans lequel je me plonge actuellement. 
+L'algotrithme  de cryptographie est écrit en JavaScipt, language dans lequel je me plonge actuellement(2021). 
 
 j'avais d'abord écrit l'algorithme en Python il y a quelques années (vous pouvez le retrouver dans mes repositories). 
 Le passage d'un language à l'autre n'a pas été simple, par exemple en python j'étais passé par l'unicode des caractères entrés, je n'ai pour l'instant pas réussi cette technique en JavaScript, mais je vais me pencher un peu plus sur le sujet. D'où l'utilisation d'un tableau [alphabet].  
