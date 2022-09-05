@@ -1,6 +1,8 @@
 # CryptoHTML
 Projet d'une page web qui permet de crypter du texte. 
 
+voir la page github : https://robin-lune.github.io/CryptoHTML/index.html
+
 L'algotrithme  de cryptographie est écrit en JavaScipt, language dans lequel je me plonge actuellement(2021). 
 
 j'avais d'abord écrit l'algorithme en Python il y a quelques années (vous pouvez le retrouver dans mes repositories). 
